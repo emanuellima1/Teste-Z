@@ -42,28 +42,28 @@ int main()
 			/*Referente a funcao testez1*/
 			case 'a':
 			case 'A': printf("Digite o valor medio: ");
-								scanf("%lf", &vmedio);
-								printf("Digite o valor de referencia: ");
-								scanf("%lf", &referencia);
-								printf("Digite o desvio padrao da media: ");
-								scanf("%lf", &desvpadm);
-								testez = testez1(vmedio, referencia, desvpadm);
-								printf("O Teste Z e' %f\n\n", testez);
-								break;
+				scanf("%lf", &vmedio);
+				printf("Digite o valor de referencia: ");
+				scanf("%lf", &referencia);
+				printf("Digite o desvio padrao da media: ");
+				scanf("%lf", &desvpadm);
+				testez = testez1(vmedio, referencia, desvpadm);
+				printf("O Teste Z e' %f\n\n", testez);
+				break;
 
 			/*Referente a funcao testez2*/
 			case 'b':
 			case 'B': printf("Digite o primeiro valor: ");
-								scanf("%lf", &valor1);
-								printf("Digite a incerteza do primeiro valor: ");
-								scanf("%lf", &incerteza1);
-								printf("Digite o segundo valor: ");
-								scanf("%lf", &valor2);
-								printf("Digite a incerteza do segundo valor: ");
-								scanf("%lf", &incerteza2);
-								testez = testez2(valor1, incerteza1, valor2, incerteza2);
-								printf("O Teste Z e' %f\n\n", testez);
-								break;
+				scanf("%lf", &valor1);
+				printf("Digite a incerteza do primeiro valor: ");
+				scanf("%lf", &incerteza1);
+				printf("Digite o segundo valor: ");
+				scanf("%lf", &valor2);
+				printf("Digite a incerteza do segundo valor: ");
+				scanf("%lf", &incerteza2);
+				testez = testez2(valor1, incerteza1, valor2, incerteza2);
+				printf("O Teste Z e' %f\n\n", testez);
+				break;
 
 			default: printf("Comando incorreto\n\n");
 		}
